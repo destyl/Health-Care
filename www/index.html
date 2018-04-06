@@ -37,25 +37,23 @@
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
         <title>Health Care - Twoja aplikacja medyczna</title>
     </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-            <form>
-<div class="ui-field-contain">
-    <label for="select-native-1">Basic:</label>
-    <select name="select-native-1" id="select-native-1">
-        <option value="1">The 1st Option</option>
-        <option value="2">The 2nd Option</option>
-        <option value="3">The 3rd Option</option>
-        <option value="4">The 4th Option</option>
-    </select>
-</div>
-</form>
-        </div>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Page Title</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <p>Page content goes here.</p>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>

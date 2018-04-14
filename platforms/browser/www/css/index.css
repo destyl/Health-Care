@@ -119,3 +119,18 @@ h1 {
 
 
 }
+
+.footer-menu{
+    width: 100%;
+    float: right;
+}
+
+.footer-menu li{
+    float: left;
+    line-height: 34.78px;
+    padding: 0 20px;
+}
+
+li {
+    list-style-type: none;
+}

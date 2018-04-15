@@ -25,6 +25,10 @@
   font-family: 'Roboto';
  
 }
+
+body{
+
+}
  
 .ui-content{
 text-shadow:none !important;
@@ -37,12 +41,15 @@ left: 0;
  
 .Home{
   text-shadow: none;
-  background-image: url("img/bg.png");
+  background-image: url("img/bg1.png");
+     background-repeat: no-repeat;
+    background-size: 100% auto;
+
 }
  
 .main-text-container{
-margin-top: 40%; 
-padding-bottom: 20px;
+margin-top: 60%; 
+padding-bottom: 10px;
 }
  
 .text-container{
@@ -62,12 +69,12 @@ margin: 0 auto;
 .text-comment{
   text-align: center;
   color: white;
-  padding-top: 25px;
+  padding-top: 5px;
 }
  
 .container-buttons{
   width:95%;
-  margin: 40% auto 0 auto;
+  margin: 30% auto 0 auto;
 }
  
 .button-home-primary{
@@ -88,7 +95,7 @@ margin: 0 auto;
  
 .text-terms{
   text-align: center; 
-  padding-top: 50px; 
+  padding-top: 30px; 
   color: white; 
   font-size: 8px; 
   width: 100%;
@@ -118,16 +125,17 @@ text-transform: none;
   width: 80%;
   height: 75px;
   background-color: white;
+  position: none;
   border-radius: 20px;
   margin-left: 10%; 
   margin-top: -25px;
   box-shadow: 0px 5px 12px 0px  rgb(0, 0, 0, 0.05);
 }
 .first-box-content{
+  top: 50%;
   text-align: center; 
   position: relative;  
-  float: left;  
-  top: 50%;  
+  float: left;   
   left: 50%;  
   transform: translate(-50%, -50%);
   display: inline-block;
@@ -136,9 +144,9 @@ text-transform: none;
  
 .first-box-date{
   color: #47A0B5;
-  font-size: 24px;
+  font-size: 28px;
   text-transform: none !important;
-  font-weight: 900;
+  font-weight: 500;
 }
  
 .first-box-comment{
@@ -149,10 +157,80 @@ text-transform: none;
 #rest-box{
   height: 60px;
   margin-top:30px;
+  position: relative;
+}
+
+.icon {
+  padding-right: 0.7em;
+  float: right;
+  padding-top: 0.6em;
+  font-size: 32px;
+  color: #E36E7B;
+}
+
+.circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+   display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #E36E7B;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
 }
  
+.rest-box-content{
+  top: 50%;
+  text-align: center; 
+  position: relative;  
+  float: left;   
+  left: 10%;  
+  transform: translate(-50%, -50%);
+  display: inline-block;
  
+}
+
+.container-element-box{
+  position: absolute;
+  margin-left: 20%;
+  padding-top: 16px;
+}
+
+.value-element-mark{
+  font-size: 10px;
+  text-transform: none;
+}
+
+.value-element-inner{
+  float:right; 
+  text-align: right; 
+  padding-top: 16px; 
+  margin-right: 5%;
+}
  
+.element-date{
+  font-size: 11px; 
+  text-transform: none;
+  color: #A6B1C0
+} 
+
+.menu-container{
+  list-style-type: none;
+  margin: 0;
+  padding:0px;
+  font-weight: 300;
+  text-transform: none;
+  font-size: 12px;
+  text-align: center;
+}
+
+.menu-element{
+  display: inline-block;
+  padding: 0px 1em
+}
  
 </style>
     </head>
@@ -166,11 +244,9 @@ text-transform: none;
     <div role="main" class="ui-content">
         <div class="main-text-container">
             <div class="text-container">
-              Health<span style="color: #64CFE8;">Care</span>
+              Health<span style="color: #438097;">Care</span>
             </div>
         </div>        
- 
-        <div class="line"></div>
  
         <div class="text-comment">
           Lorem ipsum doler van susad carno.
@@ -187,9 +263,6 @@ text-transform: none;
                 </div>
         </div>
  
-      <div data-role="footer" data-position="fixed">
-        <h4>Page Footer</h4>
-      </div>
     </div>
   </div>
  
@@ -198,6 +271,7 @@ text-transform: none;
  
  
     <div role="main" class="ui-content secound-page">
+      <div style="padding-bottom: 80px;">
       <div class="secound-page-background">
           <div class="container-top-content"> 
           <div> <img src="img/Wojtek.png" alt="" width="40%" height="auto" style="margin-left: 30%;"></div>
@@ -210,25 +284,113 @@ text-transform: none;
           <div class="first-box-date">24 kwiecień</div>
           <div class="first-box-comment">Twoje ostatnie badanie</div>
         </div>
- 
-        <div style=" position: relative; transform: translate(-50%, -50%);float: left; top: 50%; left: 40%; width: 5%; height: auto;"><img src="img/arrow-right.svg" alt=""></div>
- 
+
+        <div class="icon">
+        <i class="fas fa-angle-right"></i>
+        </div> 
       </div> 
+
+
+      <div class="first-box" id="rest-box">
+        <div class="rest-box-content">
+          <div class="circle"  style="">G</div>
+        </div>
+        
+        <div class="container-element-box">
+          <div style="color: #3A4759;">Glukoza</div> 
+          <span class="value-element-mark">wartość:
+           <span style="color:#E36E7B">powyżej normy</span>
+         </span>
+        </div>
+
+       <div class="value-element-inner">
+        <div style="color: #E36E7B;">115,00 
+          <span style="font-size: 10px; color: #47A0B5">(+12,00)</span>
+        </div>
+         <span class="element-date">Kwi. 24</span>
+       </div>
+      </div>     
  
-      <div class="first-box" id="rest-box"></div>     
+
+
+      <div class="first-box" id="rest-box">
+        <div class="rest-box-content">
+          <div class="circle"  style="">G</div>
+        </div>
+        
+        <div class="container-element-box">
+          <div style="color: #3A4759;">Glukoza</div> 
+          <span class="value-element-mark">wartość:
+           <span style="color:#E36E7B">powyżej normy</span>
+         </span>
+        </div>
+
+       <div class="value-element-inner">
+        <div style="color: #E36E7B;">115,00 
+          <span style="font-size: 10px; color: #47A0B5">(+12,00)</span>
+        </div>
+         <span class="element-date">Kwi. 24</span>
+       </div>
+      </div>     
  
-      <div class="first-box" id="rest-box"></div>
  
-      <div class="first-box" id="rest-box" ></div>
+
+      <div class="first-box" id="rest-box">
+        <div class="rest-box-content">
+          <div class="circle"  style="">G</div>
+        </div>
+        
+        <div class="container-element-box">
+          <div style="color: #3A4759;">Glukoza</div> 
+          <span class="value-element-mark">wartość:
+           <span style="color:#E36E7B">powyżej normy</span>
+         </span>
+        </div>
+
+       <div class="value-element-inner">
+        <div style="color: #E36E7B;">115,00 
+          <span style="font-size: 10px; color: #47A0B5">(+12,00)</span>
+        </div>
+         <span class="element-date">Kwi. 24</span>
+       </div>
+      </div>     
+  
  
+      <div class="first-box" id="rest-box">
+        <div class="rest-box-content">
+          <div class="circle"  style="">G</div>
+        </div>
+        
+        <div class="container-element-box">
+          <div style="color: #3A4759;">Glukoza</div> 
+          <span class="value-element-mark">wartość:
+           <span style="color:#E36E7B">powyżej normy</span>
+         </span>
+        </div>
+
+       <div class="value-element-inner">
+        <div style="color: #E36E7B;">115,00 
+          <span style="font-size: 10px; color: #47A0B5">(+12,00)</span>
+        </div>
+         <span class="element-date">Kwi. 24</span>
+       </div>
+      </div>     
+ 
+
  
  
     </div>
+ </div>
  
  
- 
-    <div data-role="footer" data-position="fixed">
-        <h4>Page Footer</h4>
+    <div data-role="footer" data-position="fixed" style="padding: 10px 0 5px 0;">
+        <ul class="menu-container">
+          <li class="menu-element"><img src="img/icons/home.png" alt=""><div>Home</div></li>
+          <li class="menu-element"><img src="img/icons/badania.png" alt=""><div>Badania</div></li>
+          <li class="menu-element"><img src="img/icons/planer.png" alt=""><div>Planer</div></li>
+          <li class="menu-element"><img src="img/icons/dziennik.png" alt=""><div>Dziennik</div></li>
+          <li class="menu-element"><img src="img/icons/profil.png" alt=""><div>Profil</div></li>
+        </ul>
     </div>
 </div>
 <script>

@@ -354,3 +354,20 @@ text-transform: none;
   padding: 0px 1em
 }
  
+ #add-button{
+  width: 80%;
+
+ }
+ #add-href{
+  background-color:#53D2D7 !important;
+ }
+
+ .header-element {
+  margin-bottom: 5%;
+  margin-top: 5%;
+ }
+
+ .menu-element2{
+  font-size: 13px;
+  font-weight: bold;
+ }
